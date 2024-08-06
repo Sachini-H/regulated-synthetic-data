@@ -6,6 +6,7 @@ This script  constrained_data_for_multiple_days.ipynb can be used to generate th
 *   Reject
 *   Rectified
 *   Manpower
+*   Reject reasons
 
 The inputs we need are:
 
@@ -25,9 +26,15 @@ We have all 4 sheets in one file  constraints_mul_days.xlsx  here which we will 
     ftt_synthesizer.pkl
     defective_synthesizer.pkl
     defects_synthesizer.pkl
+    rr_synthesizer.pkl
     
     **(Upload to content/sample_data when running the script)**
+
+
 
 Now you can run the full script. 
 
 The output files per attribute will be dumped under **content/** using the attribute name in .csv format.
+The plan data will be saved to plan.csv file. 
+FTT, reject, defective and rectified combined will be written to production.csv as well as to seperate files.
+defects and reject reasons will also be avaialble as seperate .csv files.
