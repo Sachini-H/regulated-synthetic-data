@@ -1,13 +1,13 @@
 This script  multiple_lines_multiple_days.ipynb can be used to generate the following events given some KPI constarints for multiple line for multiple days.
 
-FTT
-Defective
-Defects
-Reject
-Rectified
-Manpower
-Reject reasons
-Change
+    FTT
+    Defective
+    Defects
+    Reject
+    Rectified
+    Manpower
+    Reject reasons
+    Change
 
 The inputs(in .xlsx format) we need are:
 
@@ -42,7 +42,8 @@ constraints.xlsx > derived_kpis. Please refer the notes on the script about edit
 calculate and write the basic rtarget KPI values to My Drive > plan_data > constraints.xlsx > target_kpis.
 
 
-
+For any option above,
+----------------------
 
 Step 5: Now refresh the constarints.xlsx sheet and run the multiple_lines_multiple_days.ipynb on Colab (again providing access if needed)
 Note : Make sure to edit the enline_qc station ids on cell 05 if the factory is different from the example. This script will generate the follwing .csv outputs on the colab files itself which you can download. 
