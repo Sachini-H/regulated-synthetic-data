@@ -48,12 +48,12 @@ For any option above,
 Step 5: Now refresh the constarints.xlsx sheet and run the multiple_lines_multiple_days.ipynb on Colab (again providing access if needed)
 Note : Make sure to edit the enline_qc station ids on cell 05 if the factory is different from the example. This script will generate the follwing .csv outputs on the colab files itself which you can download. 
 
-  production.csv: contains all the FTT, Rectified, Reject and Defective events generated.
-  plan.csv: plan dupmed as a .csv file. 
-  regulated_synthetic_....csv : Each event type in a seperate csv file where ... referes to the above output event types mentioned in the begining.
-
-
-  
+    production.csv: contains all the FTT, Rectified, Reject and Defective events generated.
+    plan.csv: plan dupmed as a .csv file. 
+    regulated_synthetic_....csv : Each event type in a seperate csv file where ... referes to the above output event types mentioned in the begining.
+    
+    
+    
 
 
 
