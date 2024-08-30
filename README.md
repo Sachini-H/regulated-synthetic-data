@@ -46,13 +46,20 @@ For any option above,
 ----------------------
 
 Step 5: Now refresh the constarints.xlsx sheet and run the multiple_lines_multiple_days.ipynb on Colab (again providing access if needed)
-Note : Make sure to edit the enline_qc station ids on cell 05 if the factory is different from the example. This script will generate the follwing .csv outputs on the colab files itself which you can download. It would also write all the resukts in .csv format to My Drive> example_results folder which will be a newly generated folder specifically for writing the results.
+Note : Make sure to edit the enline_qc station ids on cell 05 if the factory is different from the example. This script will generate the follwing .csv outputs on the colab files itself which you can download. It would also write all the resukts in .csv format to My Drive> example_results > csv_results folder which will be a newly generated folder specifically for writing the results.
 
     production.csv: contains all the FTT, Rectified, Reject and Defective events generated.
     plan.csv: plan dupmed as a .csv file. 
-    regulated_synthetic_....csv : Each event type in a seperate csv file where ... referes to the above output event types mentioned in the begining.
-    
-    
+    regulated_synthetic_....csv : Each event type in a seperate csv file where ... referes to the above output event types mentioned in the begining.   
+
+For generating json events from the above events,
+--------------------------------------------------
+
+Download 'generate_events_from_csv.ipynb' and run using Google Colb. You may need to provide access to the Google Drive. The script will write the results 
+to My Drive> example_results > json_results folder which will be newly generated from the script to contain the json events.
+
+    running_order_change, manpower, ftt, reject, defective, rectified .json files will contain json events for each event type.
+    all_events.json will contain all the events combined into one json file. 
     
 
 
