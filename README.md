@@ -36,16 +36,25 @@ and write the output to My Drive > plan_data > constraints.xlsx > target_kpis.
 
 Now, if you want to create derived kpis such as hourly linewise efficiency and or hourly linewise defective rate values set to a pre-determined value, 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
-Step 4: Run the script targets_from_derived_kpis.ipynb on Colab( You maybe required to provide drive access througha pop-up
-UI when running the script.) This would generate some target basic KPI values calculated from the derived kpis you can eneter from scratch or edit on 
-constraints.xlsx > derived_kpis. Please refer the notes on the script about editing the details at the appropriate moment. This script would ultimately
-calculate and write the basic rtarget KPI values to My Drive > plan_data > constraints.xlsx > target_kpis.
+Step 4: Run the script targets_from_derived_kpis_1.ipynb on Colab( You maybe required to provide drive access througha pop-up
+UI when running the script.) This would generate some example derived KPIs which is semantically aligned with the provided plan data at My Drive > plan_data > constraints.xlsx > derived_kpis sheet. After the exectution, the user can go ahead and refresh the mentioned sheet and change any of the following KPIs:
+    Operator
+    Helper
+    Iron man
+    QC
+    target_efficiency
+    target_defective_rate
+    ftt_ration (This indicates the % of FTTs among all FTT+Rectified count) 
+
+Step 5: un the script targets_from_derived_kpis_2.ipynb on Colab( You maybe required to provide drive access througha pop-up
+UI when running the script.) This would generate some target basic KPI values calculated from the derived kpis you can enetered/altered  
+constraints.xlsx > derived_kpis.This script would ultimately calculate and write the basic target KPI values to My Drive > plan_data > constraints.xlsx > target_kpis. Note : If the target_defective_rate provided is incompatible with the provided target_efficiency, the program will change it to the minimum acceptable value and write this value to the My Drive > plan_data > constraints.xlsx > derived_kpis sheet by the end of the program so that you can verify as well.
 
 
 For any option above,
 ----------------------
 
-Step 5: Now refresh the constarints.xlsx sheet and run the multiple_lines_multiple_days.ipynb on Colab (again providing access if needed)
+Step 6: Now refresh the constarints.xlsx sheet and run the multiple_lines_multiple_days.ipynb on Colab (again providing access if needed)
 Note : Make sure to edit the enline_qc station ids on cell 05 if the factory is different from the example. This script will generate the follwing .csv outputs on the colab files itself which you can download. It would also write all the resukts in .csv format to My Drive> example_results > csv_results folder which will be a newly generated folder specifically for writing the results.
 
     production.csv: contains all the FTT, Rectified, Reject and Defective events generated.
